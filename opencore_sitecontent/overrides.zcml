@@ -1,0 +1,22 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
+           xmlns:topp="http://namespaces.openplans.org/topp"
+           xmlns:i18n="http://namespaces.zope.org/i18n"
+ 	   xmlns:opencore="http://namespaces.openplans.org/opencore"
+	   >
+
+  <browser:page
+     for="opencore.interfaces.IOpenSiteRoot"
+     permission="zope2.View"
+     class=".views.BecomingAMemberBlock"
+     name="becoming-a-member"
+     />
+
+  <browser:page
+     for="opencore.interfaces.IOpenSiteRoot"
+     permission="zope2.View"
+     class=".views.AboutBlock"
+     name="about-block"
+     />
+
+</configure>

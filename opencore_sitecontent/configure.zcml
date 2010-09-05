@@ -1,0 +1,10 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
+           xmlns:topp="http://namespaces.openplans.org/topp"
+           xmlns:i18n="http://namespaces.zope.org/i18n"
+ 	   xmlns:opencore="http://namespaces.openplans.org/opencore"
+	   >
+
+  <!-- your configuration here -->
+
+</configure>
