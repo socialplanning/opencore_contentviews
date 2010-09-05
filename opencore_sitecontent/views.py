@@ -18,8 +18,8 @@ class SiteContentBlock(BaseView):
         return page.restrictedTraverse("@@raw-view")
             
 class AboutBlock(SiteContentBlock):
-    self.key = "sitecontent_aboutblock"
+    key = "sitecontent_aboutblock"
 
 class BecomingAMemberBlock(SiteContentBlock):
-    self.key = "sitecontent_becomingamember"
+    key = "sitecontent_becomingamember"
 
