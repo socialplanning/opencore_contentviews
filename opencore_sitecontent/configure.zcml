@@ -3,8 +3,15 @@
            xmlns:topp="http://namespaces.openplans.org/topp"
            xmlns:i18n="http://namespaces.zope.org/i18n"
  	   xmlns:opencore="http://namespaces.openplans.org/opencore"
+	   xmlns:browser="http://namespaces.zope.org/browser"
 	   >
 
-  <!-- your configuration here -->
+  <browser:page
+     for="opencore.interfaces.IOpenSiteRoot"
+     permission="cmf.ModifyPortalContent"
+     class=".views.ManageSiteContentBlocks"
+     name="manage-site-content-blocks"
+     template="manage.pt"
+     />
 
 </configure>

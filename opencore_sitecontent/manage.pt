@@ -1,0 +1,20 @@
+<tal:handle-request replace="nothing" define="fdata view/handle_request" />
+<html i18n:domain="opencore" metal:use-macro="here/@@standard_macros/master">
+  <body>
+    <div metal:fill-slot="content">
+      <div id="oc-content-main">
+	<form method="POST" tal:attributes="action string:${view/portal/absolute_url}/manage-site-content-blocks">
+	  <fieldset>
+	    <label for="project" tal:content="view/project_noun"></label>
+	    <input type="text" name="project"/>
+	  </fieldset>
+	  <fieldset tal:repeat="key view/keys">
+	    <label tal:attributes="for key" tal:content="key"></label>
+	    <input type="text" tal:attributes="name key"/>
+	  </fieldset>
+	  <input type="submit" />
+	</form>
+      </div>
+    </div>
+  </body>
+</html>
