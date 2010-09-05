@@ -4,7 +4,7 @@ class SiteContentBlock(BaseView):
 
     def source_page(self):
         path = self.portal.getProperty(self.key)
-        page = self.portal.restrictedTraverse(page)
+        page = self.portal.restrictedTraverse(path)
         return page
 
     def set_source_page(self, path):
