@@ -15,7 +15,7 @@ class SiteContentBlock(BaseView):
 
     def __call__(self):
         page = self.source_page()
-        return page.restrictedTraverse("@@raw-view")
+        return page.restrictedTraverse("@@raw-view")()
             
 class AboutBlock(SiteContentBlock):
     key = "sitecontent_aboutblock"
