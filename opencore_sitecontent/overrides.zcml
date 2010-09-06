@@ -20,4 +20,11 @@
      name="about-block"
      />
 
+  <browser:page
+     for="opencore.interfaces.IOpenSiteRoot"
+     permission="zope2.View"
+     class=".views.HomeAboutBlock"
+     name="homepage-about"
+     />
+
 </configure>
