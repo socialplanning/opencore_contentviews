@@ -65,7 +65,7 @@ class SiteContentBlock(BaseView):
             manage_url = '%s/%s' % (self.portal.absolute_url(),
                                     'manage-site-content-blocks')
             flash = """
-The content of this page block is being pulled in from <a href="%s">the wiki page %s</a>. 
+The content of this page block is being pulled in from <a href="%s">the wiki page &quot;%s&quot"</a>. 
 As a site administrator, you can set a different wiki page to pull content 
 from using <a href="%s">this form</a>.""" % (
                 url, title, manage_url)
