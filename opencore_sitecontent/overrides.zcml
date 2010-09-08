@@ -6,25 +6,25 @@
 	   xmlns:browser="http://namespaces.zope.org/browser"
 	   >
 
-  <browser:page
+  <opencore:contentView
      for="opencore.interfaces.IOpenSiteRoot"
      permission="zope2.View"
-     class=".views.BecomingAMemberBlock"
      name="becoming-a-member"
+     key="sitecontent_becomingamember"
      />
 
-  <browser:page
+  <opencore:contentView
      for="opencore.interfaces.IOpenSiteRoot"
      permission="zope2.View"
-     class=".views.AboutBlock"
      name="about-block"
+     key="sitecontent_aboutblock"
      />
 
-  <browser:page
+  <opencore:contentView
      for="opencore.interfaces.IOpenSiteRoot"
      permission="zope2.View"
-     class=".views.HomeAboutBlock"
      name="homepage-about"
+     key="sitecontent_homepageaboutblock"
      />
 
 </configure>

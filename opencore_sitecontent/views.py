@@ -1,6 +1,7 @@
 from opencore.browser.base import BaseView
 from opencore.interfaces import IOpenPage
 from opencore.browser.formhandler import post_only
+from opencore_sitecontent import _registry
 
 class ManageSiteContentBlocks(BaseView):
     def handle_request(self):
@@ -25,11 +26,7 @@ class ManageSiteContentBlocks(BaseView):
             self.portal.manage_changeProperties(**{key: path})
     
     def keys(self):
-        return [
-            "sitecontent_aboutblock",
-            "sitecontent_becomingamember",
-            "sitecontent_homepageaboutblock",
-            ]
+        return list(_registry)
 
 class SiteContentBlock(BaseView):
 
@@ -73,11 +70,3 @@ from using <a href="%s">this form</a>.""" % (
             self.addPortalStatusMessage(flash)
         return page.restrictedTraverse("@@raw-view")()
             
-class AboutBlock(SiteContentBlock):
-    key = "sitecontent_aboutblock"
-
-class BecomingAMemberBlock(SiteContentBlock):
-    key = "sitecontent_becomingamember"
-
-class HomeAboutBlock(SiteContentBlock):
-    key = "sitecontent_homepageaboutblock"
