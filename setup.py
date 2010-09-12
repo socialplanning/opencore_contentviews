@@ -22,8 +22,8 @@ setup(name='opencore_contentviews',
       ],
       entry_points="""
       [opencore.versions]
-      opencore_sitecontent = opencore_sitecontent
+      opencore_contentviews = opencore_contentviews
       [topp.zcmlloader]
-      opencore = opencore_sitecontent
+      opencore = opencore_contentviews
       """,
       )
