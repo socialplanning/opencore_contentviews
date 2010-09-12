@@ -1,7 +1,7 @@
 from opencore.browser.base import BaseView
 from opencore.interfaces import IOpenPage
 from opencore.browser.formhandler import post_only
-from opencore_sitecontent import _registry
+from opencore_contentviews import _registry
 
 class ManageSiteContentBlocks(BaseView):
     def handle_request(self):

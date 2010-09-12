@@ -3,9 +3,9 @@ import sys, os
 
 version = '0.1'
 
-setup(name='opencore_sitecontent',
+setup(name='opencore_contentviews',
       version=version,
-      description="build site-level pages from site content configured by site admins",
+      description="build site-level pages from project content, configured by site admins",
       long_description="""\
 """,
       classifiers=[],

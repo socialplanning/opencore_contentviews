@@ -5,8 +5,8 @@
 
     <meta:directive
        name="contentView"
-       schema="opencore_sitecontent.zcml.IContentView"
-       handler="opencore_sitecontent.zcml.factory"
+       schema="opencore_contentviews.zcml.IContentView"
+       handler="opencore_contentviews.zcml.factory"
        />
 
   </meta:directives>

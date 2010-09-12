@@ -14,7 +14,7 @@ or edited by certain non-technical users.  In these cases, the text
 should be treated as managed content within the site's database,
 instead of static text in a template on the filesystem.
 
-The plugin ``opencore_sitecontent`` addresses these needs, providing a
+The plugin ``opencore_contentviews`` addresses these needs, providing a
 mechanism for overriding any view (or registering a new view) to pull
 its content from a designated wiki page within the site.
 

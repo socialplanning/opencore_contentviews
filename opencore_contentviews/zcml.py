@@ -33,7 +33,7 @@ class IContentView(Interface):
     to wiki pages, while allowing content development by any site user with permission
     to edit the given wiki page.
 
-    When a SiteContent view is registered with the opencore:sitecontent directive,
+    When a SiteContent view is registered with the opencore:contentView directive,
     it is also added to the @@manage-site-content-blocks form.
     """
 
@@ -73,8 +73,8 @@ class IContentView(Interface):
         )
 
 from Products.Five.browser.metaconfigure import page
-from opencore_sitecontent.views import SiteContentBlock
-from opencore_sitecontent import _registry
+from opencore_contentviews.views import SiteContentBlock
+from opencore_contentviews import _registry
 
 def factory(_context, name, permission, for_,
             layer=IDefaultBrowserLayer,
