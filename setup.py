@@ -25,5 +25,7 @@ setup(name='opencore_contentviews',
       opencore_contentviews = opencore_contentviews
       [topp.zcmlloader]
       opencore = opencore_contentviews
+      [z3c.autoinclude.plugin]
+      opencore = opencore_contentviews
       """,
       )
