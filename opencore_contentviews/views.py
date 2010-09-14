@@ -19,6 +19,7 @@ class ManageSiteContentBlocks(BaseView):
             self.set_source_page(key, value)
 
     def set_source_page(self, key, path):
+        key = str(key)
         source_page = self.portal.getProperty(key)
         if source_page is None:
             self.portal.manage_addProperty(key, path, "string")
